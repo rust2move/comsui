@@ -22,7 +22,7 @@ const NftLaunchpadView = () => {
             {
                 images.map((image, i) => {
                     return (
-                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Grid key={i} item xs={12} sm={6} md={4} lg={3}>
                             <NftMintCard image={image} />
                         </Grid>
                     )
